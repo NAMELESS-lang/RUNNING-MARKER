@@ -35,7 +35,7 @@ $cronometro  = isset($_SESSION['cronometro']) ? unserialize($_SESSION['cronometr
 
     <!-- PRINCIPAL-->
 
-    <main>
+    <main>a
         <h1>MARCADOR</h1>
         <form class="registrar_chegada" action="../controller/controlador_corredor.php" method="POST">
             <label for="numero_corredor">Número corredor: </label>
