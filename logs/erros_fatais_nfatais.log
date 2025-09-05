@@ -1,0 +1,88 @@
+Data:27/08/25 horário: 11:27:33
+Linha: 150
+Arquivo: C:\Users\Matheus\Apache24\htdocs\projeto\controller\controlador_corredor.php
+
+Data:27/08/25 horário: 11:27:55
+Erro: Uncaught Error: Call to undefined method ServiceCorredor::filtrarInput() in C:\Users\Matheus\Apache24\htdocs\projeto\controller\controlador_corredor.php:150
+Stack trace:
+#0 {main}
+  thrown
+Linha: 150
+Arquivo: C:\Users\Matheus\Apache24\htdocs\projeto\controller\controlador_corredor.php
+
+Data:27/08/25 horário: 11:31:26
+Erro: Uncaught Error: Call to undefined method ServiceCorredor::filtrarInput() in C:\Users\Matheus\Apache24\htdocs\projeto\controller\controlador_corredor.php:150
+Stack trace:
+#0 {main}
+  thrown
+Linha: 150
+Arquivo: C:\Users\Matheus\Apache24\htdocs\projeto\controller\controlador_corredor.php
+
+Data:27/08/25 horário: 11:33:39
+Erro: Uncaught Error: Call to undefined method ServiceCorredor::filtrarInput() in C:\Users\Matheus\Apache24\htdocs\projeto\controller\controlador_corredor.php:150
+Stack trace:
+#0 {main}
+  thrown
+Linha: 150
+Arquivo: C:\Users\Matheus\Apache24\htdocs\projeto\controller\controlador_corredor.php
+
+Data:27/08/25 horário: 11:33:44
+Erro: Uncaught Error: Call to undefined method ServiceCorredor::filtrarInput() in C:\Users\Matheus\Apache24\htdocs\projeto\controller\controlador_corredor.php:150
+Stack trace:
+#0 {main}
+  thrown
+Linha: 150
+Arquivo: C:\Users\Matheus\Apache24\htdocs\projeto\controller\controlador_corredor.php
+
+Data:31/08/25 horário: 09:18:01
+Erro: Uncaught Error: Call to undefined method ServiceCronometro::iniciarCronometr() in C:\Users\Matheus\Apache24\htdocs\projeto\controller\controlador_cronometro.php:10
+Stack trace:
+#0 {main}
+  thrown
+Linha: 10
+Arquivo: C:\Users\Matheus\Apache24\htdocs\projeto\controller\controlador_cronometro.php
+
+Data:05/09/25 horário: 09:54:00
+Erro: Uncaught Error: Call to a member function format() on null in C:\Users\Matheus\Apache24\htdocs\projeto\model\Cronometro.php:21
+Stack trace:
+#0 C:\Users\Matheus\Apache24\htdocs\projeto\view\corredores.php(48): Cronometro->getTempoInicialFormatado()
+#1 {main}
+  thrown
+Linha: 21
+Arquivo: C:\Users\Matheus\Apache24\htdocs\projeto\model\Cronometro.php
+
+Data:05/09/25 horário: 09:54:10
+Erro: Uncaught Error: Call to a member function format() on null in C:\Users\Matheus\Apache24\htdocs\projeto\model\Cronometro.php:21
+Stack trace:
+#0 C:\Users\Matheus\Apache24\htdocs\projeto\view\corredores.php(48): Cronometro->getTempoInicialFormatado()
+#1 {main}
+  thrown
+Linha: 21
+Arquivo: C:\Users\Matheus\Apache24\htdocs\projeto\model\Cronometro.php
+
+Data:05/09/25 horário: 10:13:13
+Erro: Uncaught ErrorException: Undefined array key "categoria" in C:\Users\Matheus\Apache24\htdocs\projeto\view\corredores.php:87
+Stack trace:
+#0 C:\Users\Matheus\Apache24\htdocs\projeto\view\corredores.php(87): tratar_erros(2, 'Undefined array...', 'C:\\Users\\Matheu...', 87)
+#1 {main}
+  thrown
+Linha: 87
+Arquivo: C:\Users\Matheus\Apache24\htdocs\projeto\view\corredores.php
+
+Data:05/09/25 horário: 10:13:17
+Erro: Uncaught ErrorException: Undefined array key "categoria" in C:\Users\Matheus\Apache24\htdocs\projeto\view\corredores.php:87
+Stack trace:
+#0 C:\Users\Matheus\Apache24\htdocs\projeto\view\corredores.php(87): tratar_erros(2, 'Undefined array...', 'C:\\Users\\Matheu...', 87)
+#1 {main}
+  thrown
+Linha: 87
+Arquivo: C:\Users\Matheus\Apache24\htdocs\projeto\view\corredores.php
+
+Data:05/09/25 horário: 10:21:55
+Erro: Uncaught Error: Object of class PDO could not be converted to string in C:\Users\Matheus\Apache24\htdocs\projeto\controller\controlador_corredor.php:150
+Stack trace:
+#0 {main}
+  thrown
+Linha: 150
+Arquivo: C:\Users\Matheus\Apache24\htdocs\projeto\controller\controlador_corredor.php
+

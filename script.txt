@@ -1,0 +1,11 @@
+create table corredores(
+	numero INT,
+	nome VARCHAR(40),
+	tempo_chegada VARCHAR(50),
+	tempo_percurso VARCHAR(50),
+	categoria VARCHAR(10),
+);
+
+select * from corredores;
+
+delete from corredores;

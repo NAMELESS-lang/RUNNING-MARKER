@@ -1,0 +1,376 @@
+:root{
+    --cor_fonte: azure;
+    --cor_notificacao: #05b362;
+    --cor_fundo_cabecalho:linear-gradient(135deg, rgba(0, 30, 157, 1) 22%, rgba(0, 74, 173, 1) 50%, rgba(8, 37, 75, 1) 72%);
+    --fonte_sistema: Arial, Helvetica, sans-serif;
+    --cor_fundo_botoes: #004aad;
+    --cor_fundo_labels: #081de0;
+    --cor_fundo_botoes_hover: #071483;
+    --cor_fundo_botao_manual_cronometro:#df7f02;
+    --cor_fundo_botao_manual_cronometro_manual: #ff9102;
+    --cor_botao_finalizar-cronometragem:  rgba(182, 12, 33, 1);
+    --cor_botao_finalizar-cronometragem_hover: rgb(114, 3, 16); 
+    --cor_botao_iniciar-cronometragem: rgb(2, 54, 49);
+    --cor_botao_iniciar-cronometragem_hover: #0c8608;
+}
+
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: rgb(229, 230, 231);
+}
+
+
+/* CABEÇALHO */
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: var(--cor_fonte);
+    font-family: var(--fonte_sistema);
+    height: 10vh;
+    background: var(--cor_fundo_cabecalho)
+}
+
+/* LINKS PARA OUTRAS PARTES DO SISTEMAS */
+div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+div a{
+    margin: 1%;
+    text-decoration: none;
+    color: var(--cor_fonte);
+    background-color: var(--cor_fundo_botoes);
+    border-radius: 3px;
+    font-size: 1.3em;
+    font-family: var(--fonte_sistema);
+    padding: 1%;
+}
+
+div a:hover{
+    background: var(--cor_fundo_botoes_hover);
+}
+
+
+/* SUBTÍTULO DE NOTIFICAÇÃO */
+h2{
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 1%;
+    font-family: var(--fonte_sistema);
+    font-weight: bold;
+    color: var(--cor_notificacao);
+}
+
+/* CONTEÚDO PRINCIPAL */
+
+main{
+    margin-left: 5%;
+    height: 70vh;
+    width: 90vw;
+    display: flex;  
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 1px 1px 2px 2px rgb(88, 88, 88);
+    border-radius: 5px;
+}
+
+main h1{
+    font-size: 2.8em;
+    font-family: var(--fonte_sistema);
+    margin-bottom: 1%;
+}
+
+/* FORMULÁRIO PARA REGISTRAR A CHEGADA */
+
+.registrar_chegada {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.registrar_chegada label{
+    font-size: 1.4em;
+    padding-top: 0.7%;
+    border-radius: 3px;
+    font-family: var(--fonte_sistema);
+    font-weight: bold;
+    background-color: var(--cor_fundo_labels);
+    color: var(--cor_fonte);
+}
+
+.registrar_chegada input{
+    width: 15%;
+    height: 100%;
+    border-radius: 5px;
+}
+
+.registrar_chegada button{
+    width: 10%;
+    height: 100%;
+    background-color: var(--cor_fundo_botoes);
+    border: none;
+    font-family: var(--fonte_sistema);
+    font-size: 1.2em;
+    font-weight: bold;
+    border-radius: 3px;
+    color: azure;
+}
+
+.registrar_chegada button:hover{
+    background: var(--cor_fundo_botoes_hover)
+}
+
+
+/* INICIO E FIM DA CONTAGEM DO CRONÔMETRO */
+
+.rel_cronometro{
+    margin-top: 1%;
+    width: 100vw;
+    height: 10%;
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.rel_cronometro h4{
+    background-color: var(--cor_fundo_labels);
+    font-family: var(--fonte_sistema);
+    font-size: 1.5em;
+    color: var(--cor_fonte);
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.rel_cronometro p{
+    font-size: 1.8em;
+    text-align: center;
+    font-family: var(--fonte_sistema);
+}
+
+/* DIV QUE ARMAZENA O CRONOMETRO A TROCA DE CATEGORIA E A TABELA */
+
+.div_total{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* DIV DO CRONOMETRO */
+
+.div_cronometro{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    box-shadow: 1px 1px 1px 1px rgb(36, 36, 36);
+    border-radius: 5px;
+    width: 40%;
+    height: 70%;
+    gap: 10px;
+}
+
+.div_cronometro form{
+    width: 60%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 4%;
+}
+
+.div_cronometro label{
+    background-color: var(--cor_fundo_labels);
+    font-family: var(--fonte_sistema);
+    font-size: 1.2em;
+    color: var(--cor_fonte);
+    font-weight: bold;
+    padding: 6px;
+    border-radius: 4px;
+}
+
+.div_cronometro input{
+    border-radius: 5px;
+    width: 22%;
+}
+
+.redefir_cronometro_button{
+    border: none;
+    color: var(--cor_fonte);
+    font-size: 1.3em;
+    font-family: var(--fonte_sistema);
+    border-radius: 3px;
+    height: 20%;
+    background: var(--cor_fundo_botao_manual_cronometro);
+}
+
+.redefir_cronometro_button:hover{
+    background: var(--cor_fundo_botao_manual_cronometro_manual);
+}
+
+.div_cronometro_manual{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.div_cronometro_manual input{
+    height: 3vh;
+}
+
+.div_cronometro h3{
+    font-family: var(--fonte_sistema);
+    background-color: var(--cor_fundo_labels);
+    border-radius: 4px;
+    padding: 10px;
+    font-size: 1.4em;
+    font-weight: bold;
+    color: var(--cor_fonte);
+}
+
+.div_cronometro form button{
+    border: none;
+    color: var(--cor_fonte);
+    font-size: 1.3em;
+    font-family: var(--fonte_sistema);
+    border-radius: 3px;
+}
+
+.finalizar{
+    background: var(--cor_botao_finalizar-cronometragem);
+    padding: 3%;
+}
+
+.finalizar:hover{
+    background: var(--cor_botao_finalizar-cronometragem_hover);
+}
+
+.iniciar{
+    padding: 3%;
+    background: var(--cor_botao_iniciar-cronometragem);
+}
+
+.iniciar:hover{
+    background: var(--cor_botao_iniciar-cronometragem_hover);
+}
+
+/* DIV DO SELETOR DE CORRIDA */
+
+.seletor_corrida{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 5%;
+}
+
+.seletor_corrida label{
+    font-family: var(--fonte_sistema);
+    font-size: 1.3em;
+    color:  var(--cor_fonte);
+    background-color: var(--cor_fundo_labels);
+    border-radius: 4px;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.seletor_corrida select{
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    width: 100%;
+    height: 5vh;
+}
+
+.seletor_corrida button{
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    width: 105%;
+    height: 4vh;
+    font-size: 1em;
+    background-color: var(--cor_botao_iniciar-cronometragem);
+    color: var(--cor_fonte);
+    font-weight: bold;
+    font-family: var(--fonte_sistema);
+}
+
+.seletor_corrida button:hover{
+    background-color: var(--cor_botao_iniciar-cronometragem_hover);
+}
+
+/* DIV DA TABELA DE CORREDORES */
+
+.div_tabela{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.div_tabela h4{
+    font-family: var(--fonte_sistema);
+    background-color: var(--cor_fundo_labels);
+    border-radius: 4px;
+    padding: 10px;
+    font-size: 1.4em;
+    font-weight: bold;
+    color: var(--cor_fonte);
+}
+
+.div_tabela p{
+    margin-top: 20px;
+    font-size: 1.8em;
+    text-align: center;
+    font-family: var(--fonte_sistema);
+    margin-bottom: 10%;
+    background: rgb(235, 233, 233);
+    border: 1px solid #1f1e1e; 
+    width: 39%;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 5px; 
+}
+
+table thead th{
+    background: var(--cor_fundo_labels);
+    color: var(--cor_fonte);
+    text-align: center;
+    padding: 12px 16px;
+    font-weight: bold;
+}
+
+table tbody td{
+    text-align: center;
+    padding: 10px;
+    font-family: var(--fonte_sistema);
+    font-size: 1.1em;
+    background: rgb(235, 233, 233);
+    border: 1px solid #999; 
+}
+
+table thead th{
+    font-family: var(--fonte_sistema);
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+

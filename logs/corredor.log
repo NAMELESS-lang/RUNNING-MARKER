@@ -1,0 +1,20 @@
+Data:31/08/25 horário: 10:26:35
+Erro: Undefined array key "cronometro"
+Linha: 44
+Arquivo: C:\Users\Matheus\Apache24\htdocs\projeto\controller\controlador_corredor.php
+ 
+Data:05/09/25 horário: 09:57:41
+Erro: Undefined array key "numero"
+Linha: 40
+Arquivo: C:\Users\Matheus\Apache24\htdocs\projeto\model\CorredorDAO.php
+ 
+Data:05/09/25 horário: 09:59:11
+Erro: Undefined array key "numero"
+Linha: 41
+Arquivo: C:\Users\Matheus\Apache24\htdocs\projeto\model\CorredorDAO.php
+ 
+Data:05/09/25 horário: 09:59:43
+Erro: Undefined array key "numero"
+Linha: 40
+Arquivo: C:\Users\Matheus\Apache24\htdocs\projeto\model\CorredorDAO.php
+ 
