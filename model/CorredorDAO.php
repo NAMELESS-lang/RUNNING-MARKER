@@ -17,7 +17,6 @@ class CorredorDAO{
         }
         foreach($resultado as $result){
             $corredor = new Corredor($result["numero"],$result["nome"]);
-            //$result["tempo_chegada"] = null;
             $corredor->setChegadaDAO($result["tempo_chegada"]);
             $corredor->setTempoCorridaDataBase($result["tempo_percurso"]?? "");
             $corredor->setCategoria($result['categoria']);

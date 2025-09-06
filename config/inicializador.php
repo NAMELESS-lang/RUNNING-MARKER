@@ -22,6 +22,7 @@ spl_autoload_register(function($class){
 $service_corredor = new ServiceCorredor();
 $service_db = new ServiceDB();
 $service_cronometro = new ServiceCronometro();
+$service_exportcsv = new ServiceExportCSV();
 $exception_service = new ExceptionService();
 $pdo = new PDO($db_url,$usuario,$senha);
 

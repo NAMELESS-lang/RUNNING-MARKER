@@ -75,6 +75,25 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){ // Atende a somente formulário com me
             exit();
         }
 
+    }else if(isset($_POST['gerar_csv'])){
+        try{
+            $categoria = $service_corredor->filtrarInputs($_POST['categorias']);
+            $service_exportcsv->registrarCorredores($categoria);
+            $_SESSION['menssagem'] = "Export corredores ".$categoria." feito com sucesso " ;
+            
+        }catch(Exception $e){
+
+            // Registra nas logs o erro ocorrido
+            $exception_service->registrarCorredorErros($e);
+            $_SESSION['mensagem'] = "Houve um erro interno!";
+            // Indica que houve um erro interno
+            http_response_code(500);
+        }finally{
+            header(("Location: ../view/corredores.php"));
+            exit();
+        }
+    
+    
     }else if(isset($_POST['limpar_banco_dados'])){
         try{
             

@@ -35,7 +35,7 @@ $cronometro  = isset($_SESSION['cronometro']) ? unserialize($_SESSION['cronometr
 
     <!-- PRINCIPAL-->
 
-    <main>a
+    <main>
         <h1>MARCADOR</h1>
         <form class="registrar_chegada" action="../controller/controlador_corredor.php" method="POST">
             <label for="numero_corredor">Número corredor: </label>
@@ -84,7 +84,7 @@ $cronometro  = isset($_SESSION['cronometro']) ? unserialize($_SESSION['cronometr
 
            <div class="div_tabela">
             <h4>Categoria selecionada</h4>
-            <p><?= $_SESSION['corrida_atual'] ?></p>
+            <p><?= isset($_SESSION['corrida_atual'])? $_SESSION['corrida_atual'] : "" ?></p>
             <table>
                 <thead>
                 <tr>
@@ -109,6 +109,14 @@ $cronometro  = isset($_SESSION['cronometro']) ? unserialize($_SESSION['cronometr
                 <?php }?>
                 </tbody>
             </table>
+            <form action="../controller/controlador_corredor.php" method="post">
+                <p>Exportar lista de corredores</p>
+                    <select name="categorias">
+                        <option value="1.5Km">1.5Km</option>
+                        <option value="3Km">3Km</option>
+                    </select>
+                <button type="submit" name="gerar_csv" value="gerar_csv"></button>
+            </form>
             </div>
         </div>
     </main>

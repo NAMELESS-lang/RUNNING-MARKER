@@ -66,4 +66,8 @@ class Corredor{
     public function setCategoria($categoria){
         $this->categoria = $categoria;
     }
+
+    public function toString(){
+        return $this->numero.";".$this->nome.";".$this->tempo_corrida.";".$this->chegada."\n";
+    }
 }
