@@ -1,0 +1,9 @@
+Data:10/09/25 horário: 07:36:48
+Erro: Uncaught ErrorException: Array to string conversion in C:\xampp\htdocs\projeto\view\corredores.php:97
+Stack trace:
+#0 C:\xampp\htdocs\projeto\view\corredores.php(97): tratar_erros(2, 'Array to string...', 'C:\\xampp\\htdocs...', 97)
+#1 {main}
+  thrown
+Linha: 97
+Arquivo: C:\xampp\htdocs\projeto\view\corredores.php
+

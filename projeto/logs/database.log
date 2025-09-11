@@ -1,0 +1,10 @@
+Data:10/09/25 horario: 07:56:11
+Erro: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '= null' at line 1
+Linha: 122
+Arquivo: C:\xampp\htdocs\projeto\model\CorredorDAO.php
+ 
+Data:10/09/25 horario: 08:35:21
+Erro: SQLSTATE[HY093]: Invalid parameter number: parameter was not defined
+Linha: 115
+Arquivo: C:\xampp\htdocs\projeto\model\CorredorDAO.php
+ 
